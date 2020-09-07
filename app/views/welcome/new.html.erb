@@ -1,2 +1,6 @@
-<h1>Welcome#new</h1>
-<p>Find me in app/views/welcome/new.html.erb</p>
+<%= form_for :user do |f| %>
+  <p>Username: <%= f.text_field :name %></p>
+  <p>Password: <%= f.password_field :password %></p>
+  <p>Password Confirmation: <%= f.password_field :password_confirmation %></p>
+  <%= f.submit 'Submit' %>
+<% end %>
